@@ -1,0 +1,743 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fdf2f4;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    background-color: #FFB0B0; 
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    min-height: 40vh;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6699;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.featured-products {
+    padding: 20px;
+    text-align: center;
+    margin-top: 0px; /* Reduced space above the featured cupcakes */
+    margin-bottom: 100px; /* Increased space to the footer */
+}
+
+.featured-products h2 {
+    margin-bottom: 30px; /* Space between title and product grid */
+    font-size: 2em; /* Adjust font size if needed */
+}
+
+.divider-black {
+    border: 0;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 40px 0; /* Increased margin for more space */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for featured products */
+    gap: 15px; /* Reduced gap between products */
+    justify-items: center;
+}
+
+.products-grid-our {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for all cupcakes */
+    gap: 15px; /* Reduced gap between products */
+    justify-items: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 300px; /* Adjusted width */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px; /* Increased size of the product images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 5px;
+}
+
+.product-title {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.product-price {
+    color: #ff6699;
+    font-weight: bold;
+}
+
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF0DC;
+}
+
+.top-header .left,
+.top-header .center,
+.top-header .right {
+    flex: 1;
+    text-align: center;
+}
+
+.top-header .left {
+    text-align: left;
+    font-size: 1em;
+}
+
+.top-header .center {
+    text-align: center;
+}
+
+.top-header .center .logo img {
+    height: 150px;
+}
+
+.top-header .right {
+    text-align: right;
+}
+
+.top-header .right .social-icon {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Divider line between header and navbar */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #d3d3d3; /* Light gray color */
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFF0DC;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    outline: none;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a:active {
+    color: #ff6699;
+}
+
+.navbar .nav-links a:focus {
+    outline: none;
+}
+
+/* Cart Icon */
+.cart-icon {
+    font-size: 1.5em;
+}
+
+/* Divider line between Featured Products and Follow Me section */
+.divider-black {
+    border: 0;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 30px 0;
+}
+
+/* Follow Me Section */
+.follow-me {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.follow-me h2 {
+    font-size: 2em;
+    font-family: 'Futura Now Headline ExtraLight', sans-serif;
+    font-weight: 100;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.follow-me .follow-button {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    font-family: 'Futura Now Headline ExtraLight', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.follow-me .follow-button:hover,
+.follow-me .follow-button:active {
+    background-color: #f4dceb;
+    color: #333;
+    border-color: #000;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffb3c6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer .footer-content .footer-section {
+    width: 30%;
+}
+
+.footer .footer-content .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-content .footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer .footer-bottom {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* Cart Page Styles */
+.cart-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.cart-item {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.cart-item-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.cart-item-name {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.cart-item-price {
+    font-size: 1.1em;
+    color: #ff6347;
+}
+
+.cart-item-quantity {
+    margin-top: 10px;
+}
+
+.cart-summary {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.cart-summary h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.cart-total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.checkout-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.checkout-button:hover {
+    background-color: #e5533e;
+}
+
+.centered-title {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some space above and below */
+    font-size: 2em; /* Adjust font size */
+    color: #333; /* Optional: change text color */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.add-to-cart-btn {
+    margin-top: 10px;
+    padding: 12px 0;
+    background-color: #ff6f61; /* Attractive button color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer;
+    width: 100%; /* Same width as image */
+    font-size: 1em; /* Adjust font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.shop-products {
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 60px; /* Adds space below the shop section */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff4f3e; /* Darker hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.centered-title {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some space above and below */
+    font-size: 2em; /* Adjust font size */
+    color: #333; /* Optional: change text color */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+/* Customization Section Styles */
+.customization-section {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 30px auto; /* Center the section */
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.centered-title {
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Space above and below */
+    font-size: 2em; /* Font size */
+    color: #ff69b4; /* Pink color for the title */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+}
+
+label {
+    margin: 10px 0 5px; /* Space around labels */
+    font-weight: 600; /* Bold labels */
+}
+
+select, input[type="checkbox"] {
+    margin-bottom: 15px; /* Space between form elements */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #ff69b4; /* Button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* About Section Styles */
+.about-section {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 30px auto; /* Center the section */
+    padding: 20px; /* Padding around the section */
+    background-color: #fff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.about-section h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #ff69b4; /* Pink color for the title */
+    font-size: 2em; /* Font size for the title */
+}
+
+.about-section p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1em; /* Font size for paragraphs */
+    color: #333; /* Dark text color */
+    text-align: justify; /* Justify text in paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .about-section {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    .about-section h2 {
+        font-size: 1.5em; /* Smaller title on mobile */
+    }
+
+    .about-section p {
+        font-size: 0.9em; /* Smaller text on mobile */
+    }
+}
+
+/* Contact Section Styles */
+.contact-section {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 30px auto; /* Center the section */
+    padding: 30px; /* Padding around the section */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.contact-section h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #ff69b4; /* Pink color for the title */
+    font-size: 2.5em; /* Larger font size for the title */
+}
+
+.contact-section h3 {
+    color: #ff1493; /* Darker pink color for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+    font-size: 1.5em; /* Font size for subheadings */
+}
+
+.contact-section p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1em; /* Font size for paragraphs */
+    color: #333; /* Dark text color */
+}
+
+.contact-section address {
+    font-style: normal; /* Normal style for address */
+    margin: 10px 0; /* Space above and below address */
+    color: #555; /* Gray color for address */
+}
+
+.contact-section ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.contact-section ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.contact-section a {
+    color: #ff69b4; /* Pink color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+.contact-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 20px; /* Less padding for smaller screens */
+    }
+
+    .contact-section h2 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    .contact-section h3 {
+        font-size: 1.25em; /* Smaller subheadings on mobile */
+    }
+
+    .contact-section p {
+        font-size: 0.9em; /* Smaller text on mobile */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #ffb3c6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer .footer-content .footer-section {
+    width: 30%;
+}
+
+.footer .footer-content .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-content .footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer .footer-bottom {
+    font-size: 0.9em;
+    color: #fff;
+}
+.form-section {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Padding inside the form */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center-align text */
+}
+
+.form-section h2 {
+    margin-bottom: 20px; /* Space below the title */
+    color: #ff69b4; /* Pink color for the title */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Space around labels */
+    font-weight: 600; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full-width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #ff69b4; /* Button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+p {
+    margin: 15px 0; /* Space around paragraphs */
+}
+
+a {
+    color: #ff69b4; /* Pink color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: right;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.order-summary {
+    margin-top: 20px;
+}
+.cart-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-remove {
+    margin-left: 15px;
+}
+
+.remove-button {
+    background-color: #ff4f4f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-button:hover {
+    background-color: #e04444;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkout-button, .update-button {
+    display: inline-block;
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.checkout-button:hover, .update-button:hover {
+    background-color: #e55f85;
+}
