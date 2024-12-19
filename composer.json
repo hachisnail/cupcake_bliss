@@ -1,0 +1,8 @@
+{
+    "name": "hachisnail/cupcake_bliss",
+    "description": "BSIS 3B",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {}
+}
